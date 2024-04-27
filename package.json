@@ -43,6 +43,7 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.6.3",
-    "fast-xml-parser": "^4.3.6"
+    "fast-xml-parser": "^4.3.6",
+    "html-entities": "^2.5.2"
   }
 }
