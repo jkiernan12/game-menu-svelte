@@ -15,7 +15,6 @@ export interface Game {
   maxplaytime: {value: string};
   statistics: {
     ratings: {
-
       average: {
         value: string;
       };
