@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+@font-face {
+	font-family: 'Lobster';
+	src: url('/fonts/Lobster-Regular.ttf');
+}
+
+:root [data-theme='wintry'] {
+    --theme-font-family-heading: 'Lobster', sans-serif;
+}
