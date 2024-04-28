@@ -34,7 +34,7 @@ export const getGames = async (username: string) : Promise<Game[]> => {
   const gameIdString = gameIds.join(',');
 
   // get game data
-  const gamesXml = await fetch(bgg + 'thing?id=' + gameIdString + '&stats=1').then(response => response.text()).then(xml => decode(xml));
+  const gamesXml = await fetch(bgg + 'thing?id=' + gameIdString + '&stats=1').then(response => response.text());
   const gamesParser = new XMLParser({attributeNamePrefix: '', ignoreAttributes: false, isArray: (name) => name === 'name'});
   const games: Game[] = gamesParser.parse(gamesXml).items.item;
 
